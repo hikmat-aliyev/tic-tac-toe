@@ -1,0 +1,105 @@
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.button-container > button {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: 0.1px solid brown;
+}
+
+
+button:disabled {
+    background-color: beige;
+    color: brown;
+    cursor: default;
+  }
+
+#game-status {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-weight: bold;
+    font-family: monospace, 'Times New Roman', Times, serif;
+    color: brown;
+    backdrop-filter: blur(1px);
+    width: 100%;
+    height: 100%;
+    display: none;
+    text-align: center;
+    padding-top: 40%;
+    text-shadow: 2px 2px black;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+
+#restart-button {
+    width: 120px;
+    height: 50px;
+    background-color: antiquewhite;
+    color: black;
+    border: none;
+    font-size: 24px;
+    font-family: monospace, 'Times New Roman', Times, serif;
+}
+
+label {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.players-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-weight: bold;
+    font-family: monospace, 'Times New Roman', Times, serif;
+    color: brown;
+    backdrop-filter: blur(1px);
+    width: 100%;
+    height: 100%;
+    display: none;
+    text-align: center;
+}
+
+.names-scores-div >  input {
+    border: none;
+    color: black;
+    width: 10px;
+}
+
+.names-scores-div > label {
+    font-size: 22px;
+}
+.name-score-container {
+    display: flex;
+    gap: 20px;
+}
